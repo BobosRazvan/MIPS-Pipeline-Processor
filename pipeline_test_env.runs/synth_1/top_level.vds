@@ -1,0 +1,544 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat May 25 13:32:21 2024
+# Process ID: 17068
+# Current directory: C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/pipeline_test_env/pipeline_test_env.runs/synth_1
+# Command line: vivado.exe -log top_level.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_level.tcl
+# Log file: C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/pipeline_test_env/pipeline_test_env.runs/synth_1/top_level.vds
+# Journal file: C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/pipeline_test_env/pipeline_test_env.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top_level.tcl -notrace
+Command: synth_design -top top_level -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 15264 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 361.684 ; gain = 100.477
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top_level' [C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/pipeline_test_env/pipeline_test_env.srcs/sources_1/new/top_level.vhd:18]
+INFO: [Synth 8-3491] module 'MPG' declared at 'C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/pipeline_test_env/pipeline_test_env.srcs/sources_1/new/MPG.vhd:37' bound to instance 'debouncer1' of component 'MPG' [C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/pipeline_test_env/pipeline_test_env.srcs/sources_1/new/top_level.vhd:209]
+INFO: [Synth 8-638] synthesizing module 'MPG' [C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/pipeline_test_env/pipeline_test_env.srcs/sources_1/new/MPG.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'MPG' (1#1) [C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/pipeline_test_env/pipeline_test_env.srcs/sources_1/new/MPG.vhd:44]
+INFO: [Synth 8-3491] module 'MPG' declared at 'C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/pipeline_test_env/pipeline_test_env.srcs/sources_1/new/MPG.vhd:37' bound to instance 'debouncer2' of component 'MPG' [C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/pipeline_test_env/pipeline_test_env.srcs/sources_1/new/top_level.vhd:210]
+INFO: [Synth 8-3491] module 'SSD' declared at 'C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/pipeline_test_env/pipeline_test_env.srcs/sources_1/new/SSD.vhd:38' bound to instance 'ssd1' of component 'SSD' [C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/pipeline_test_env/pipeline_test_env.srcs/sources_1/new/top_level.vhd:212]
+INFO: [Synth 8-638] synthesizing module 'SSD' [C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/pipeline_test_env/pipeline_test_env.srcs/sources_1/new/SSD.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'SSD' (2#1) [C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/pipeline_test_env/pipeline_test_env.srcs/sources_1/new/SSD.vhd:47]
+INFO: [Synth 8-3491] module 'Instruction_Fetch' declared at 'C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/pipeline_test_env/pipeline_test_env.srcs/sources_1/new/Instruction_Fetch.vhd:9' bound to instance 'Intruction_Fetch1' of component 'Instruction_Fetch' [C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/pipeline_test_env/pipeline_test_env.srcs/sources_1/new/top_level.vhd:214]
+INFO: [Synth 8-638] synthesizing module 'Instruction_Fetch' [C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/pipeline_test_env/pipeline_test_env.srcs/sources_1/new/Instruction_Fetch.vhd:21]
+INFO: [Synth 8-226] default block is never used [C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/pipeline_test_env/pipeline_test_env.srcs/sources_1/new/Instruction_Fetch.vhd:66]
+INFO: [Synth 8-226] default block is never used [C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/pipeline_test_env/pipeline_test_env.srcs/sources_1/new/Instruction_Fetch.vhd:75]
+WARNING: [Synth 8-614] signal 'WE' is read in the process but is not in the sensitivity list [C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/pipeline_test_env/pipeline_test_env.srcs/sources_1/new/Instruction_Fetch.vhd:83]
+INFO: [Synth 8-256] done synthesizing module 'Instruction_Fetch' (3#1) [C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/pipeline_test_env/pipeline_test_env.srcs/sources_1/new/Instruction_Fetch.vhd:21]
+INFO: [Synth 8-3491] module 'Instruction_Decode' declared at 'C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/test_env_basys_3/test_env_basys_3.srcs/sources_1/new/Instruction_Decode.vhd:8' bound to instance 'Instruction_Decode1' of component 'Instruction_Decode' [C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/pipeline_test_env/pipeline_test_env.srcs/sources_1/new/top_level.vhd:216]
+INFO: [Synth 8-638] synthesizing module 'Instruction_Decode' [C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/test_env_basys_3/test_env_basys_3.srcs/sources_1/new/Instruction_Decode.vhd:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/test_env_basys_3/test_env_basys_3.srcs/sources_1/new/Instruction_Decode.vhd:48]
+INFO: [Synth 8-3491] module 'REG_FILE' declared at 'C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/pipeline_test_env/pipeline_test_env.srcs/sources_1/new/REG_FILE.vhd:9' bound to instance 'RF1' of component 'REG_FILE' [C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/test_env_basys_3/test_env_basys_3.srcs/sources_1/new/Instruction_Decode.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'REG_FILE' [C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/pipeline_test_env/pipeline_test_env.srcs/sources_1/new/REG_FILE.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'REG_FILE' (4#1) [C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/pipeline_test_env/pipeline_test_env.srcs/sources_1/new/REG_FILE.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'Instruction_Decode' (5#1) [C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/test_env_basys_3/test_env_basys_3.srcs/sources_1/new/Instruction_Decode.vhd:23]
+INFO: [Synth 8-3491] module 'MainControl' declared at 'C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/test_env_basys_3/test_env_basys_3.srcs/sources_1/new/MainControl.vhd:9' bound to instance 'MainControl1' of component 'MainControl' [C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/pipeline_test_env/pipeline_test_env.srcs/sources_1/new/top_level.vhd:218]
+INFO: [Synth 8-638] synthesizing module 'MainControl' [C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/test_env_basys_3/test_env_basys_3.srcs/sources_1/new/MainControl.vhd:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/test_env_basys_3/test_env_basys_3.srcs/sources_1/new/MainControl.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'MainControl' (6#1) [C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/test_env_basys_3/test_env_basys_3.srcs/sources_1/new/MainControl.vhd:23]
+INFO: [Synth 8-3491] module 'Execution_Unit' declared at 'C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/test_env_basys_3/test_env_basys_3.srcs/sources_1/new/Execution_Unit.vhd:8' bound to instance 'Execution_Unit1' of component 'Execution_Unit' [C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/pipeline_test_env/pipeline_test_env.srcs/sources_1/new/top_level.vhd:220]
+INFO: [Synth 8-638] synthesizing module 'Execution_Unit' [C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/test_env_basys_3/test_env_basys_3.srcs/sources_1/new/Execution_Unit.vhd:25]
+INFO: [Synth 8-226] default block is never used [C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/test_env_basys_3/test_env_basys_3.srcs/sources_1/new/Execution_Unit.vhd:45]
+WARNING: [Synth 8-614] signal 'ALURes2' is read in the process but is not in the sensitivity list [C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/test_env_basys_3/test_env_basys_3.srcs/sources_1/new/Execution_Unit.vhd:65]
+INFO: [Synth 8-256] done synthesizing module 'Execution_Unit' (7#1) [C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/test_env_basys_3/test_env_basys_3.srcs/sources_1/new/Execution_Unit.vhd:25]
+INFO: [Synth 8-3491] module 'Memory_Unit' declared at 'C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/pipeline_test_env/pipeline_test_env.srcs/sources_1/new/Memory_Unit.vhd:7' bound to instance 'Memory_Unit1' of component 'Memory_Unit' [C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/pipeline_test_env/pipeline_test_env.srcs/sources_1/new/top_level.vhd:222]
+INFO: [Synth 8-638] synthesizing module 'Memory_Unit' [C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/pipeline_test_env/pipeline_test_env.srcs/sources_1/new/Memory_Unit.vhd:18]
+WARNING: [Synth 8-614] signal 'Address' is read in the process but is not in the sensitivity list [C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/pipeline_test_env/pipeline_test_env.srcs/sources_1/new/Memory_Unit.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'Memory_Unit' (8#1) [C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/pipeline_test_env/pipeline_test_env.srcs/sources_1/new/Memory_Unit.vhd:18]
+INFO: [Synth 8-226] default block is never used [C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/pipeline_test_env/pipeline_test_env.srcs/sources_1/new/top_level.vhd:227]
+WARNING: [Synth 8-614] signal 'MemtoReg' is read in the process but is not in the sensitivity list [C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/pipeline_test_env/pipeline_test_env.srcs/sources_1/new/top_level.vhd:225]
+WARNING: [Synth 8-614] signal 'MemOut' is read in the process but is not in the sensitivity list [C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/pipeline_test_env/pipeline_test_env.srcs/sources_1/new/top_level.vhd:225]
+WARNING: [Synth 8-614] signal 'ALUFinal' is read in the process but is not in the sensitivity list [C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/pipeline_test_env/pipeline_test_env.srcs/sources_1/new/top_level.vhd:225]
+INFO: [Synth 8-226] default block is never used [C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/pipeline_test_env/pipeline_test_env.srcs/sources_1/new/top_level.vhd:243]
+INFO: [Synth 8-226] default block is never used [C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/pipeline_test_env/pipeline_test_env.srcs/sources_1/new/top_level.vhd:323]
+WARNING: [Synth 8-6014] Unused sequential element ID_EX_MemtoReg_reg was removed.  [C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/pipeline_test_env/pipeline_test_env.srcs/sources_1/new/top_level.vhd:312]
+WARNING: [Synth 8-6014] Unused sequential element ID_EX_Jump_reg was removed.  [C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/pipeline_test_env/pipeline_test_env.srcs/sources_1/new/top_level.vhd:315]
+WARNING: [Synth 8-6014] Unused sequential element EX_MEM_MemtoReg_reg was removed.  [C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/pipeline_test_env/pipeline_test_env.srcs/sources_1/new/top_level.vhd:340]
+WARNING: [Synth 8-6014] Unused sequential element MEM_WB_MemtoReg_reg was removed.  [C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/pipeline_test_env/pipeline_test_env.srcs/sources_1/new/top_level.vhd:353]
+WARNING: [Synth 8-3848] Net ALURes in module/entity top_level does not have driver. [C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/pipeline_test_env/pipeline_test_env.srcs/sources_1/new/top_level.vhd:143]
+WARNING: [Synth 8-3848] Net MemOut in module/entity top_level does not have driver. [C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/pipeline_test_env/pipeline_test_env.srcs/sources_1/new/top_level.vhd:149]
+WARNING: [Synth 8-3848] Net ALUFinal in module/entity top_level does not have driver. [C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/pipeline_test_env/pipeline_test_env.srcs/sources_1/new/top_level.vhd:150]
+WARNING: [Synth 8-3848] Net BranchAdress in module/entity top_level does not have driver. [C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/pipeline_test_env/pipeline_test_env.srcs/sources_1/new/top_level.vhd:117]
+INFO: [Synth 8-256] done synthesizing module 'top_level' (9#1) [C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/pipeline_test_env/pipeline_test_env.srcs/sources_1/new/top_level.vhd:18]
+WARNING: [Synth 8-3331] design Instruction_Decode has unconnected port Instr[15]
+WARNING: [Synth 8-3331] design Instruction_Decode has unconnected port Instr[14]
+WARNING: [Synth 8-3331] design Instruction_Decode has unconnected port Instr[13]
+WARNING: [Synth 8-3331] design Instruction_Decode has unconnected port RegDst
+WARNING: [Synth 8-3331] design top_level has unconnected port btn[3]
+WARNING: [Synth 8-3331] design top_level has unconnected port btn[2]
+WARNING: [Synth 8-3331] design top_level has unconnected port sw[4]
+WARNING: [Synth 8-3331] design top_level has unconnected port sw[3]
+WARNING: [Synth 8-3331] design top_level has unconnected port sw[2]
+WARNING: [Synth 8-3331] design top_level has unconnected port sw[1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 418.984 ; gain = 157.777
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin Intruction_Fetch1:BranchAdress[15] to constant 0 [C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/pipeline_test_env/pipeline_test_env.srcs/sources_1/new/top_level.vhd:214]
+WARNING: [Synth 8-3295] tying undriven pin Intruction_Fetch1:BranchAdress[14] to constant 0 [C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/pipeline_test_env/pipeline_test_env.srcs/sources_1/new/top_level.vhd:214]
+WARNING: [Synth 8-3295] tying undriven pin Intruction_Fetch1:BranchAdress[13] to constant 0 [C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/pipeline_test_env/pipeline_test_env.srcs/sources_1/new/top_level.vhd:214]
+WARNING: [Synth 8-3295] tying undriven pin Intruction_Fetch1:BranchAdress[12] to constant 0 [C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/pipeline_test_env/pipeline_test_env.srcs/sources_1/new/top_level.vhd:214]
+WARNING: [Synth 8-3295] tying undriven pin Intruction_Fetch1:BranchAdress[11] to constant 0 [C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/pipeline_test_env/pipeline_test_env.srcs/sources_1/new/top_level.vhd:214]
+WARNING: [Synth 8-3295] tying undriven pin Intruction_Fetch1:BranchAdress[10] to constant 0 [C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/pipeline_test_env/pipeline_test_env.srcs/sources_1/new/top_level.vhd:214]
+WARNING: [Synth 8-3295] tying undriven pin Intruction_Fetch1:BranchAdress[9] to constant 0 [C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/pipeline_test_env/pipeline_test_env.srcs/sources_1/new/top_level.vhd:214]
+WARNING: [Synth 8-3295] tying undriven pin Intruction_Fetch1:BranchAdress[8] to constant 0 [C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/pipeline_test_env/pipeline_test_env.srcs/sources_1/new/top_level.vhd:214]
+WARNING: [Synth 8-3295] tying undriven pin Intruction_Fetch1:BranchAdress[7] to constant 0 [C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/pipeline_test_env/pipeline_test_env.srcs/sources_1/new/top_level.vhd:214]
+WARNING: [Synth 8-3295] tying undriven pin Intruction_Fetch1:BranchAdress[6] to constant 0 [C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/pipeline_test_env/pipeline_test_env.srcs/sources_1/new/top_level.vhd:214]
+WARNING: [Synth 8-3295] tying undriven pin Intruction_Fetch1:BranchAdress[5] to constant 0 [C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/pipeline_test_env/pipeline_test_env.srcs/sources_1/new/top_level.vhd:214]
+WARNING: [Synth 8-3295] tying undriven pin Intruction_Fetch1:BranchAdress[4] to constant 0 [C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/pipeline_test_env/pipeline_test_env.srcs/sources_1/new/top_level.vhd:214]
+WARNING: [Synth 8-3295] tying undriven pin Intruction_Fetch1:BranchAdress[3] to constant 0 [C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/pipeline_test_env/pipeline_test_env.srcs/sources_1/new/top_level.vhd:214]
+WARNING: [Synth 8-3295] tying undriven pin Intruction_Fetch1:BranchAdress[2] to constant 0 [C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/pipeline_test_env/pipeline_test_env.srcs/sources_1/new/top_level.vhd:214]
+WARNING: [Synth 8-3295] tying undriven pin Intruction_Fetch1:BranchAdress[1] to constant 0 [C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/pipeline_test_env/pipeline_test_env.srcs/sources_1/new/top_level.vhd:214]
+WARNING: [Synth 8-3295] tying undriven pin Intruction_Fetch1:BranchAdress[0] to constant 0 [C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/pipeline_test_env/pipeline_test_env.srcs/sources_1/new/top_level.vhd:214]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 418.984 ; gain = 157.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 418.984 ; gain = 157.777
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/danie/Desktop/Razvi/UTCN/Anul 1/DSD 2/atm/atm.srcs/constrs_1/new/test_cstr.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [C:/Users/danie/Desktop/Razvi/UTCN/Anul 1/DSD 2/atm/atm.srcs/constrs_1/new/test_cstr.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/danie/Desktop/Razvi/UTCN/Anul 1/DSD 2/atm/atm.srcs/constrs_1/new/test_cstr.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [C:/Users/danie/Desktop/Razvi/UTCN/Anul 1/DSD 2/atm/atm.srcs/constrs_1/new/test_cstr.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/danie/Desktop/Razvi/UTCN/Anul 1/DSD 2/atm/atm.srcs/constrs_1/new/test_cstr.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [C:/Users/danie/Desktop/Razvi/UTCN/Anul 1/DSD 2/atm/atm.srcs/constrs_1/new/test_cstr.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/danie/Desktop/Razvi/UTCN/Anul 1/DSD 2/atm/atm.srcs/constrs_1/new/test_cstr.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [C:/Users/danie/Desktop/Razvi/UTCN/Anul 1/DSD 2/atm/atm.srcs/constrs_1/new/test_cstr.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/danie/Desktop/Razvi/UTCN/Anul 1/DSD 2/atm/atm.srcs/constrs_1/new/test_cstr.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [C:/Users/danie/Desktop/Razvi/UTCN/Anul 1/DSD 2/atm/atm.srcs/constrs_1/new/test_cstr.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/danie/Desktop/Razvi/UTCN/Anul 1/DSD 2/atm/atm.srcs/constrs_1/new/test_cstr.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [C:/Users/danie/Desktop/Razvi/UTCN/Anul 1/DSD 2/atm/atm.srcs/constrs_1/new/test_cstr.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/danie/Desktop/Razvi/UTCN/Anul 1/DSD 2/atm/atm.srcs/constrs_1/new/test_cstr.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [C:/Users/danie/Desktop/Razvi/UTCN/Anul 1/DSD 2/atm/atm.srcs/constrs_1/new/test_cstr.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/danie/Desktop/Razvi/UTCN/Anul 1/DSD 2/atm/atm.srcs/constrs_1/new/test_cstr.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [C:/Users/danie/Desktop/Razvi/UTCN/Anul 1/DSD 2/atm/atm.srcs/constrs_1/new/test_cstr.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/danie/Desktop/Razvi/UTCN/Anul 1/DSD 2/atm/atm.srcs/constrs_1/new/test_cstr.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[8]'. [C:/Users/danie/Desktop/Razvi/UTCN/Anul 1/DSD 2/atm/atm.srcs/constrs_1/new/test_cstr.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/danie/Desktop/Razvi/UTCN/Anul 1/DSD 2/atm/atm.srcs/constrs_1/new/test_cstr.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[9]'. [C:/Users/danie/Desktop/Razvi/UTCN/Anul 1/DSD 2/atm/atm.srcs/constrs_1/new/test_cstr.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/danie/Desktop/Razvi/UTCN/Anul 1/DSD 2/atm/atm.srcs/constrs_1/new/test_cstr.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[10]'. [C:/Users/danie/Desktop/Razvi/UTCN/Anul 1/DSD 2/atm/atm.srcs/constrs_1/new/test_cstr.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/danie/Desktop/Razvi/UTCN/Anul 1/DSD 2/atm/atm.srcs/constrs_1/new/test_cstr.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[11]'. [C:/Users/danie/Desktop/Razvi/UTCN/Anul 1/DSD 2/atm/atm.srcs/constrs_1/new/test_cstr.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/danie/Desktop/Razvi/UTCN/Anul 1/DSD 2/atm/atm.srcs/constrs_1/new/test_cstr.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[12]'. [C:/Users/danie/Desktop/Razvi/UTCN/Anul 1/DSD 2/atm/atm.srcs/constrs_1/new/test_cstr.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/danie/Desktop/Razvi/UTCN/Anul 1/DSD 2/atm/atm.srcs/constrs_1/new/test_cstr.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[13]'. [C:/Users/danie/Desktop/Razvi/UTCN/Anul 1/DSD 2/atm/atm.srcs/constrs_1/new/test_cstr.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/danie/Desktop/Razvi/UTCN/Anul 1/DSD 2/atm/atm.srcs/constrs_1/new/test_cstr.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[14]'. [C:/Users/danie/Desktop/Razvi/UTCN/Anul 1/DSD 2/atm/atm.srcs/constrs_1/new/test_cstr.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/danie/Desktop/Razvi/UTCN/Anul 1/DSD 2/atm/atm.srcs/constrs_1/new/test_cstr.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[15]'. [C:/Users/danie/Desktop/Razvi/UTCN/Anul 1/DSD 2/atm/atm.srcs/constrs_1/new/test_cstr.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/danie/Desktop/Razvi/UTCN/Anul 1/DSD 2/atm/atm.srcs/constrs_1/new/test_cstr.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[4]'. [C:/Users/danie/Desktop/Razvi/UTCN/Anul 1/DSD 2/atm/atm.srcs/constrs_1/new/test_cstr.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/danie/Desktop/Razvi/UTCN/Anul 1/DSD 2/atm/atm.srcs/constrs_1/new/test_cstr.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/danie/Desktop/Razvi/UTCN/Anul 1/DSD 2/atm/atm.srcs/constrs_1/new/test_cstr.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/danie/Desktop/Razvi/UTCN/Anul 1/DSD 2/atm/atm.srcs/constrs_1/new/test_cstr.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_level_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_level_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 744.688 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 744.746 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 744.746 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 744.746 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 744.746 ; gain = 483.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 744.746 ; gain = 483.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 744.746 ; gain = 483.539
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "ROM" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element PC_reg_rep was removed.  [C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/pipeline_test_env/pipeline_test_env.srcs/sources_1/new/Instruction_Fetch.vhd:86]
+INFO: [Synth 8-5546] ROM "zero2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4471] merging register 'ID_EX_Instr_reg[15:0]' into 'ID_IF_Instr_reg[15:0]' [C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/pipeline_test_env/pipeline_test_env.srcs/sources_1/new/top_level.vhd:302]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 744.746 ; gain = 483.539
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 3     
+	   3 Input     16 Bit       Adders := 1     
++---XORs : 
+	   2 Input     16 Bit         XORs := 1     
++---Registers : 
+	               16 Bit    Registers := 8     
+	                3 Bit    Registers := 3     
+	                1 Bit    Registers := 16    
++---Muxes : 
+	 257 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 8     
+	   2 Input      8 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+	   7 Input      4 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module top_level 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 7     
+	                3 Bit    Registers := 3     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+Module MPG 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+Module SSD 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 2     
+Module Instruction_Fetch 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	 257 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 2     
+Module Instruction_Decode 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+Module MainControl 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input      3 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 8     
+Module Execution_Unit 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 2     
+	   3 Input     16 Bit       Adders := 1     
++---XORs : 
+	   2 Input     16 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 3     
+	   7 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-6014] Unused sequential element Memory_Unit1/RAM_reg was removed. 
+INFO: [Synth 8-5546] ROM "Execution_Unit1/zero2" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design top_level has unconnected port btn[3]
+WARNING: [Synth 8-3331] design top_level has unconnected port btn[2]
+WARNING: [Synth 8-3331] design top_level has unconnected port sw[4]
+WARNING: [Synth 8-3331] design top_level has unconnected port sw[3]
+WARNING: [Synth 8-3331] design top_level has unconnected port sw[2]
+WARNING: [Synth 8-3331] design top_level has unconnected port sw[1]
+INFO: [Synth 8-3886] merging instance 'ID_EX_ExtImm_reg[1]' (FDE) to 'ID_EX_func_reg[1]'
+INFO: [Synth 8-3886] merging instance 'ID_EX_ExtImm_reg[2]' (FDE) to 'ID_EX_func_reg[2]'
+INFO: [Synth 8-3886] merging instance 'ID_EX_ExtImm_reg[3]' (FDE) to 'ID_EX_sa_reg'
+INFO: [Synth 8-3886] merging instance 'ID_EX_ExtImm_reg[7]' (FDE) to 'ID_EX_ExtImm_reg[8]'
+INFO: [Synth 8-3886] merging instance 'ID_EX_ExtImm_reg[8]' (FDE) to 'ID_EX_ExtImm_reg[9]'
+INFO: [Synth 8-3886] merging instance 'ID_EX_ExtImm_reg[9]' (FDE) to 'ID_EX_ExtImm_reg[10]'
+INFO: [Synth 8-3886] merging instance 'ID_EX_ExtImm_reg[10]' (FDE) to 'ID_EX_ExtImm_reg[11]'
+INFO: [Synth 8-3886] merging instance 'ID_EX_ExtImm_reg[11]' (FDE) to 'ID_EX_ExtImm_reg[12]'
+INFO: [Synth 8-3886] merging instance 'ID_EX_ExtImm_reg[12]' (FDE) to 'ID_EX_ExtImm_reg[13]'
+INFO: [Synth 8-3886] merging instance 'ID_EX_ExtImm_reg[13]' (FDE) to 'ID_EX_ExtImm_reg[14]'
+INFO: [Synth 8-3886] merging instance 'ID_EX_ExtImm_reg[14]' (FDE) to 'ID_EX_ExtImm_reg[15]'
+INFO: [Synth 8-3886] merging instance 'ID_EX_ExtImm_reg[0]' (FDE) to 'ID_EX_func_reg[0]'
+INFO: [Synth 8-3886] merging instance 'ID_IF_Instr_reg[4]' (FDE) to 'ID_IF_Instr_reg[5]'
+INFO: [Synth 8-3886] merging instance 'ID_IF_Instr_reg[15]' (FDE) to 'ID_IF_Instr_reg[14]'
+INFO: [Synth 8-3886] merging instance 'ID_EX_ExtImm_reg[4]' (FDE) to 'ID_EX_ExtImm_reg[5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ID_EX_Branch_reg)
+INFO: [Synth 8-3886] merging instance 'EX_MEM_Branch_reg' (FDE) to 'ID_EX_Branch_reg'
+INFO: [Synth 8-3886] merging instance 'ID_EX_ALUOp_reg[2]' (FDE) to 'ID_EX_ALUOp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ID_EX_Branch_reg)
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 744.746 ; gain = 483.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+--------------------------------------+-----------+----------------------+--------------+
+|Module Name | RTL Object                           | Inference | Size (Depth x Width) | Primitives   | 
++------------+--------------------------------------+-----------+----------------------+--------------+
+|top_level   | Instruction_Decode1/RF1/reg_file_reg | Implied   | 8 x 16               | RAM32M x 6   | 
++------------+--------------------------------------+-----------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:20 . Memory (MB): peak = 744.746 ; gain = 483.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:20 . Memory (MB): peak = 777.402 ; gain = 516.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------+--------------------------------------+-----------+----------------------+--------------+
+|Module Name | RTL Object                           | Inference | Size (Depth x Width) | Primitives   | 
++------------+--------------------------------------+-----------+----------------------+--------------+
+|top_level   | Instruction_Decode1/RF1/reg_file_reg | Implied   | 8 x 16               | RAM32M x 6   | 
++------------+--------------------------------------+-----------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:07 ; elapsed = 00:00:20 . Memory (MB): peak = 778.867 ; gain = 517.660
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:07 ; elapsed = 00:00:21 . Memory (MB): peak = 778.867 ; gain = 517.660
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:07 ; elapsed = 00:00:21 . Memory (MB): peak = 778.867 ; gain = 517.660
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:07 ; elapsed = 00:00:21 . Memory (MB): peak = 778.867 ; gain = 517.660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:07 ; elapsed = 00:00:21 . Memory (MB): peak = 778.867 ; gain = 517.660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:21 . Memory (MB): peak = 778.867 ; gain = 517.660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:07 ; elapsed = 00:00:21 . Memory (MB): peak = 778.867 ; gain = 517.660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+---------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name            | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+---------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|top_level   | MEM_WB_RegWrite_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++------------+---------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    12|
+|3     |LUT1   |     2|
+|4     |LUT2   |    12|
+|5     |LUT3   |    10|
+|6     |LUT4   |    24|
+|7     |LUT5   |    19|
+|8     |LUT6   |    39|
+|9     |RAM32M |     6|
+|10    |SRL16E |     1|
+|11    |FDCE   |    24|
+|12    |FDRE   |    59|
+|13    |IBUF   |     7|
+|14    |OBUF   |    19|
++------+-------+------+
+
+Report Instance Areas: 
++------+----------------------+-------------------+------+
+|      |Instance              |Module             |Cells |
++------+----------------------+-------------------+------+
+|1     |top                   |                   |   235|
+|2     |  Instruction_Decode1 |Instruction_Decode |    40|
+|3     |    RF1               |REG_FILE           |    40|
+|4     |  Intruction_Fetch1   |Instruction_Fetch  |    68|
+|5     |  debouncer1          |MPG                |    29|
+|6     |  debouncer2          |MPG_0              |     4|
+|7     |  ssd1                |SSD                |    34|
++------+----------------------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:07 ; elapsed = 00:00:21 . Memory (MB): peak = 778.867 ; gain = 517.660
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:04 ; elapsed = 00:00:16 . Memory (MB): peak = 778.867 ; gain = 191.898
+Synthesis Optimization Complete : Time (s): cpu = 00:00:07 ; elapsed = 00:00:21 . Memory (MB): peak = 778.867 ; gain = 517.660
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 18 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 778.867 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 6 instances were transformed.
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 6 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+70 Infos, 65 Warnings, 17 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:23 . Memory (MB): peak = 778.867 ; gain = 525.562
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 778.867 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/danie/Desktop/Razvi/UTCN/Anul 2/Sem 2/CA/Lab/Projects/pipeline_test_env/pipeline_test_env.runs/synth_1/top_level.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_level_utilization_synth.rpt -pb top_level_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat May 25 13:32:46 2024...
